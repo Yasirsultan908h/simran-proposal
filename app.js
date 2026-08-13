@@ -7,7 +7,7 @@ yes.textContent='Haan, bilkul ♥';
 success.querySelector('p').textContent='Thank you, Sumoo. Tumne kisi ko sabse khush kar diya.';
 begin.onclick=()=>story.scrollIntoView({behavior:'smooth'});
 const moments=['Sochungi? Theek hai, dil ko thoda time de dete hain 🤍','Oops… ye button bhi tumhari tarah thoda unpredictable hai!','Add, remove, phir add… button bhi confused ho gaya 😄','Jab dil ready ho, Haan wala button yahin tumhara wait kar raha hai.'];let n=0;
-function playfulNo(){n++;no.style.transform=`translate(${Math.random()*150-75}px,${Math.random()*70-35}px) rotate(${Math.random()*12-6}deg)`;hint.textContent=moments[n%moments.length];if(n>2)no.textContent='Maybe after one smile?';}
+function playfulNo(){n++;no.style.position='fixed';no.style.zIndex='20';no.style.left=Math.max(12,Math.random()*(innerWidth-170))+'px';no.style.top=Math.max(12,Math.random()*(innerHeight-70))+'px';no.style.transform=`rotate(${Math.random()*16-8}deg)`;hint.textContent=moments[n%moments.length];if(n>2)no.textContent='Maybe after one smile?';}
 no.style.cssText='background:transparent;border:0;color:#8d817a;padding:13px 18px;cursor:default;font:italic 13px Manrope;transition:transform .22s ease';
 no.addEventListener('mouseenter',playfulNo);no.addEventListener('touchstart',playfulNo,{passive:true});no.addEventListener('click',e=>{e.preventDefault();playfulNo()});
 yes.onclick=()=>{success.style.display='block';sendMoment.style.display='inline-block';hint.textContent='Tumhara Haan is kahani ka sabse khoobsurat chapter hai ♥';yes.textContent='Haan mil gaya ♥';yes.disabled=true;no.style.display='none';confetti()};
