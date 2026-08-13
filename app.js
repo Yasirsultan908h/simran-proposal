@@ -1,6 +1,6 @@
 const begin=document.querySelector('#begin'),story=document.querySelector('#story'),no=document.querySelector('#no'),yes=document.querySelector('#yes'),hint=document.querySelector('#hint'),success=document.querySelector('#success');
 document.querySelector('.poem p').innerHTML='Ek request se shuru hui thi kahani,<br>phir baaton ne dil tak raasta bana liya.<br>Sumoo, aap Snapchat par mili thi,<br>aur aap mein mujhe apna sukoon mil gaya.';
-const sendMoment=document.createElement('a');sendMoment.className='send-moment';sendMoment.target='_blank';sendMoment.rel='noopener';sendMoment.textContent='Send this moment ♥';sendMoment.href='https://wa.me/918492946223?text='+encodeURIComponent('I read your story… and yes, I choose us ♥');success.appendChild(sendMoment);
+const sendMoment=document.createElement('a');sendMoment.className='send-moment';sendMoment.target='_blank';sendMoment.rel='noopener';sendMoment.textContent='Send this moment on Snapchat 👻';sendMoment.href='https://www.snapchat.com/add/yasirr.sultan';success.appendChild(sendMoment);
 const linkStyle=document.createElement('style');linkStyle.textContent='.send-moment{display:inline-block;margin-top:18px;padding:12px 17px;border:1px solid #a26b61;color:#a26b61;text-decoration:none;border-radius:3px;font:600 12px Manrope}.send-moment:hover{background:#a26b61;color:#fff}';document.head.appendChild(linkStyle);
 document.querySelector('.intro .overline').textContent='A LETTER FROM THE HEART';
 yes.textContent='Haan, bilkul ♥';
