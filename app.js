@@ -1,4 +1,7 @@
 const begin=document.querySelector('#begin'),story=document.querySelector('#story'),no=document.querySelector('#no'),yes=document.querySelector('#yes'),hint=document.querySelector('#hint'),success=document.querySelector('#success');
+document.querySelector('.intro .overline').textContent='A LETTER FROM THE HEART';
+yes.textContent='Haan, bilkul ♥';
+success.querySelector('p').textContent='Thank you, Sumoo. Tumne kisi ko sabse khush kar diya.';
 begin.onclick=()=>story.scrollIntoView({behavior:'smooth'});
 const moments=['Sochungi? Theek hai, dil ko thoda time de dete hain 🤍','Oops… ye button bhi tumhari tarah thoda unpredictable hai!','Add, remove, phir add… button bhi confused ho gaya 😄','Jab dil ready ho, Haan wala button yahin tumhara wait kar raha hai.'];let n=0;
 function playfulNo(){n++;no.style.transform=`translate(${Math.random()*150-75}px,${Math.random()*70-35}px) rotate(${Math.random()*12-6}deg)`;hint.textContent=moments[n%moments.length];if(n>2)no.textContent='Maybe after one smile?';}
