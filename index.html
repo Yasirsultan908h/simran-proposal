@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Will you be my forever teammate?</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <style>.story-title{font:600 19px 'Space Grotesk';color:#fff;margin-bottom:20px}.story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.story-item{border:1px solid #403836;border-radius:8px;padding:16px;background:#211d1c}.story-item span{font:12px 'DM Mono';color:#ff557e}.story-item strong{display:block;margin:11px 0 5px;color:#fff}.story-item p{color:#9a918c;font:12px/1.6 'Space Grotesk'}@media(max-width:600px){.story-grid{grid-template-columns:1fr}}</style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <main class="wrap">
+    <nav><span class="brand"><i></i> love.exe</span><span class="status"><b></b> compiled with feelings</span></nav>
+
+    <section class="hero">
+      <p class="kicker">// a very important pull request</p>
+      <h1>Hey <span class="pink">Simran</span>,<br>kya tum meri<br><span class="outline">forever teammate</span> banogi?</h1>
+      <p class="lede">Hum pehle friends bane, phir dher saari memories banayi…<br>aur pata hi nahi chala, tum meri favourite person ban gayi.</p>
+      <button class="cta" id="openBtn">Proposal kholo <span>↗</span></button>
+      <div class="scroll">SCROLL TO INSPECT <span>↓</span></div>
+    </section>
+
+    <section class="terminal-card" id="proposal">
+      <div class="terminal-top"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="path">~/our-story/proposal.js</span></div>
+      <div class="terminal-body"><div class="story-title">Simran ke liye ek chhota sa message 💌</div><div class="story-grid"><div class="story-item"><span>01</span><strong>Pehle hum friends the</strong><p>Phir tumse baat karna meri daily favourite habit ban gayi.</p></div><div class="story-item"><span>02</span><strong>Ab tum special ho</strong><p>Tumhari smile mera mood instantly theek kar deti hai.</p></div><div class="story-item"><span>03</span><strong>Meri wish</strong><p>Main chahta hoon ki hum sirf friends nahi, forever partners banein.</p></div></div><div class="question"><span>♥</span> Simran, kya tum meri girlfriend banogi?</div><div class="actions"><button id="yesBtn">Haan, bilkul! ♥</button><button id="thinkBtn">Nahi 🙈</button></div><p id="response" class="response"></p></div>
+    </section>
+
+    <section class="stats"><div><strong>∞</strong><span>memories to create</span></div><div><strong>1</strong><span>person I choose</span></div><div><strong>100%</strong><span>serious about you</span></div></section>
+    <footer>made with caffeine, courage &lt;3</footer>
+  </main>
+  <canvas id="confetti"></canvas>
+  <script src="app.js"></script>
+</body>
+</html>
